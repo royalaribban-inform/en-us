@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Royal Caribbean Reservations™ Center: Book luxury cruises & vacation packages. Call 1-888-230-8925 for exclusive deals®. Best Price Guarantee®.">
+    <title>Royal Caribbean Reservations® | 1-888-230-8925 | Book Cruise Deals™</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        :root {
+            --royal-blue: #002855;
+            --ocean-teal: #00b4d8;
+            --gold: #ffd700;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(rgba(0,40,85,0.85), rgba(0,40,85,0.85)), 
+                        url('rc-background.jpg') center/cover fixed;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .header {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        .hero {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            animation: zoomIn 20s infinite alternate;
+        }
+
+        .call-container {
+            text-align: center;
+            padding: 3rem;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .phone-link {
+            color: var(--gold);
+            font-size: 2.5rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            text-shadow: 0 0 15px rgba(255,215,0,0.5);
+        }
+
+        .phone-link:hover {
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .content-section {
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .ship-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transform: rotateY(20deg);
+            transition: all 0.5s;
+        }
+
+        .ship-image:hover {
+            transform: rotateY(0deg);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        .offer-badge {
+            background: var(--ocean-teal);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            animation: pulse 2s infinite;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        .trademark {
+            font-size: 0.6em;
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>ROYAL CARIBBEAN<sup class="trademark">®</sup> RESERVATIONS</h1>
+    </header>
+
+    <section class="hero">
+        <img src="" alt="" class="">
+        <div class="call-container">
+            <h2>Your Dream Vacation Awaits<sup class="trademark">®</sup></h2>
+            <div class="offer-badge">
+                <h3>EXCLUSIVE 2025 OFFERS<sup class="trademark">™</sup></h3>
+            </div>
+            <a href="tel:18882308925" class="phone-link">1-888-230-8925</a>
+            <p>24/7 Cruise Specialists Available</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div>
+            <h2>Why Royal Caribbean<sup class="trademark">®</sup>?</h2>
+            <ul>
+                <li>World's Largest Cruise Ships<sup class="trademark">®</sup></li>
+                <li>All-Inclusive Luxury Packages</li>
+                <li>300+ Global Destinations</li>
+                <li>Award-Winning Service<sup class="trademark">™</sup></li>
+            </ul>
+            <p>Experience the ultimate vacation with Royal Caribbean's<sup class="trademark">®</sup> innovative ships featuring...</p>
+        </div>
+        <img src="ship-interior.jpg" alt="" class="ship-image">
+    </section>
+
+    <!-- Additional Content Sections -->
+</body>
+</html>
